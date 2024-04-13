@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB APPLICATION</title>
+    <style>
+        * {
+            margin: auto;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(153, 241, 241);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px;
+            margin: 24px auto;
+        }
+
+        form {
+
+            width: 60%;
+            margin-top: 50px;
+            padding: 24px;
+            background-color: rgb(189, 243, 243);
+            box-shadow: 5px 5px black;
+        }
+          form .input .label{
+            margin-bottom:50px;
+
+        }
+        form .submit-btn{
+            background-color: black;
+            color: azure;
+            box-shadow: 5px 5px white;
+        }
+        form .submit-btn{
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h1> JOB APPLICATION</h1>
+
+        <div >
+            <label class="input" for="First Name"> Name</label>
+            <input class="input" type="text" name="name" placeholder=" Enter your name">
+            <label class="input" for="Last Name">last name</label>
+            <input class="input"type="text" name="last name" placeholder="Enter your last name">
+        </div>
+        <div >
+            <label for="Email ID"> Email</label>
+            <input class="input"type="text" name="Email" placeholder="Enter your email">
+
+
+            <label class="label" for="Job Role">job role</label>
+                <select name="Job role">
+                    <option value="">----select job role-----</option>
+                    <option value="Frontened">Frontened developer</option>
+                    <option value="Backened"> Backened developer</option>
+                    <option value="Full Stack">Full Stack developer</option>
+                    <option value="UI-Ux">Ui-ux design</option>
+                </select>
+        </div>
+        <div>
+            <label class="label" for="ADDRESS">Enter Address</label>
+                <!-- address -->
+                <textarea name="Address" id="" cols="30" rows="4" placeholder="Enter address"></textarea>
+        </div>
+        <div >
+            <label class="label" for="City name"> City Name</label>
+                <input class="input" type="text" name="city name" placeholder="Enter City name....">
+                <label class="label"for="Pincode">Pincode</label>
+                <input type="pincode" name="pincode" placeholder="Enter pincode...">
+        </div>
+        <div class="input">
+            <label class="label" for="date">Date</label>
+            <input class="input" type="date" name="date" placeholder=" Enter date">
+            <label class="label" for="CV">Upload your CV</label>
+            <input type="input" name="date" id="upload">
+        </div>
+
+
+        <button class="submit-btn">APPLY NOW</button>
+
+    </form>
+
+
+</body>
+
+</html>
